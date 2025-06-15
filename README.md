@@ -12,4 +12,4 @@ A simple and clean note-taking app built with React.
 - Easy and friendly user interface  
 - Uses Poppins font for styling  
 
----
+
