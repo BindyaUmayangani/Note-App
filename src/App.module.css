@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:global(body) {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fc;
+}
+
+.appContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 360px; /* increased width */
+  background: #f0f0f5; /* slightly different sidebar color */
+  border-right: 1px solid #ddd;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.newNoteButton {
+  background-color: #4a90e2;
+  color: white;
+  padding: 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 40px;
+}
+
+.newNoteButton:hover {
+  background-color: #357ab7;
+}
+
+.noteList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.noteItem {
+  padding: 14px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  background: #ededed;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 18px; /* increased font size */
+}
+
+.noteItem:hover {
+  background: #e6e6e6;
+}
+
+.active {
+  background-color: #dceeff;
+  font-weight: 600;
+}
+
+.main {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+  background: #fdfdfd;
+}
+
+.noteFormContainer {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 720px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.noteFormContainer h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input,
+.textarea {
+  padding: 16px;
+  font-size: 18px; /* increased font size */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  font-family: inherit;
+  width: 96%;
+}
+
+.textarea {
+  min-height: 180px;
+  margin-top: 20px;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px; /* increased button font */
+}
+
+.button:hover {
+  background-color: #357ab7;
+}
+
+.cancelButton {
+  background-color: #ccc;
+  color: #333;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px; /* increased button font */
+}
+
+.cancelButton:hover {
+  background-color: #b3b3b3;
+}
+
+.noteViewContainer {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 720px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.noteHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* push icons right */
+  margin-bottom: 18px;
+  gap: 14px;
+}
+
+.viewTitle {
+  font-size: 28px; /* increased font size */
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.iconGroup {
+  display: flex;
+  gap: 0px;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #4a90e2;
+  padding: 6px;
+  transition: color 0.3s;
+}
+
+.iconButton:hover {
+  color: #357ab7;
+}
+
+.viewContent {
+  font-size: 20px; /* increased font size */
+  color: #555;
+  white-space: pre-wrap;
+  text-align: justify;
+
+}
+
+.noSelection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #888;
+  font-size: 20px;
+  text-align: center;
+}
